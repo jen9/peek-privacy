@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the Peek app: what it collects, why, and what it does not.">
+<title>Peek Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ground: #fafaf7;
+    --surface: #ffffff;
+    --ink: #15181a;
+    --muted: #5c6663;
+    --rule: #e2e6e1;
+    --accent: #1d7a55;
+    --aside: #f2f5f1;
+
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0a0c0b;
+      --surface: #101413;
+      --ink: #e7ece9;
+      --muted: #939e99;
+      --rule: #202624;
+      --accent: #78d3a6;
+      --aside: #121716;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #0a0c0b;
+    --surface: #101413;
+    --ink: #e7ece9;
+    --muted: #939e99;
+    --rule: #202624;
+    --accent: #78d3a6;
+    --aside: #121716;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 7vw, 5rem) clamp(1.15rem, 5vw, 2.5rem) 6rem;
+  }
+
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .standfirst {
+    margin: 0;
+    max-width: 34rem;
+    color: var(--muted);
+    font-size: 1.0625rem;
+  }
+
+  section {
+    padding-top: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section + section { border-top: 1px solid var(--rule); margin-top: 2.75rem; }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0.75rem 0 0;
+    color: var(--ink);
+  }
+
+  p { margin: 0; max-width: 40rem; }
+
+  strong { font-weight: 600; }
+
+  ul { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 0.4rem; }
+  li { max-width: 38rem; }
+
+  .aside {
+    background: var(--aside);
+    border-left: 2px solid var(--accent);
+    padding: 1rem 1.15rem;
+    border-radius: 0 6px 6px 0;
+  }
+  .aside p { color: var(--ink); }
+
+  .table-wrap { overflow-x: auto; }
+
+  table {
+    width: 100%;
+    min-width: 34rem;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+
+  th {
+    text-align: left;
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 0 0.85rem 0.6rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: bottom;
+  }
+
+  td {
+    padding: 0.7rem 0.85rem 0.7rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  tr td:first-child { font-weight: 500; }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .contact {
+    font-family: var(--mono);
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div class="eyebrow">Peek &middot; Last updated 14 September 2026</div>
+    <h1>Privacy Policy</h1>
+    <p class="standfirst">
+      What the Peek app collects, why, and what it does not collect. Written from what the
+      app actually does, not from a template.
+    </p>
+  </header>
+
+  <section>
+    <h2>The short version</h2>
+    <p>
+      The app works without an account. Reading the Fear &amp; Greed gauges, the macro series
+      and the events calendar needs no sign-in and no personal data at all.
+    </p>
+    <p>
+      An account is needed only to carry paid unlocks between your devices. If you create
+      one, the only personal information involved is your email address.
+    </p>
+    <p>
+      There is no advertising network, no analytics service, and no third party receiving
+      your data.
+    </p>
+  </section>
+
+  <section>
+    <h2>What is collected</h2>
+
+    <h3>An installation identifier</h3>
+    <p>
+      A random identifier is generated on your device the first time the app runs, stored in
+      your device's secure storage, and sent with each request to our service.
+    </p>
+    <p>
+      It is generated by the app, not taken from your phone or your operating system, and it
+      identifies an installation rather than a person. It exists so that a reader poll can be
+      limited to one vote per installation and so that faults can be traced. Reinstalling the
+      app produces a new one.
+    </p>
+
+    <h3>Your email address, if you create an account</h3>
+    <p>
+      Creating an account requires an email address and a password. They are handled by our
+      authentication provider, Supabase. The app itself never stores your password, and our
+      service never receives it in a readable form.
+    </p>
+    <p>
+      Your email address is used to sign you in, to recover your account if you forget your
+      password, and to attach purchases to you so that they appear on any device you sign in
+      to.
+    </p>
+
+    <h3>A notification token, if you turn alerts on</h3>
+    <p>
+      If you allow notifications, your device issues a push token which is sent to our
+      service together with which alert types you have enabled. It is used only to deliver
+      the alerts you asked for. Turning alerts off stops it being used.
+    </p>
+
+    <h3>Purchases</h3>
+    <p>
+      Purchases are taken by Google Play or the Apple App Store.
+      <strong>We never see your payment details</strong> &mdash; the stores handle payment
+      entirely and tell us only whether a purchase happened.
+    </p>
+    <p>
+      When you buy something, the app sends the store's purchase token to our service, which
+      asks the store to confirm it. We record which store took the payment, the store's own
+      identifier for it, what was bought, and which account holds it.
+    </p>
+    <p>
+      <strong>The purchase token itself is deliberately not stored.</strong> It is a
+      credential, it is not needed once the purchase has been confirmed, and keeping it would
+      put it somewhere it could later leak.
+    </p>
+  </section>
+
+  <section>
+    <h2>What is not collected</h2>
+    <ul>
+      <li>Location, of any kind, precise or approximate</li>
+      <li>Contacts, photos, files, calendar or any other content on your device</li>
+      <li>Advertising identifiers</li>
+      <li>Browsing or app-usage analytics</li>
+      <li>Any profile of you, your interests, or your finances</li>
+    </ul>
+    <p>
+      The app holds no funds, places no orders, and connects to no brokerage. The market
+      figures it shows are informational and are not investment advice.
+    </p>
+  </section>
+
+  <section>
+    <h2>Third parties</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Who</th>
+            <th scope="col">What they do</th>
+            <th scope="col">What they receive</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Supabase</td>
+            <td>Hosts our service, database and sign-in</td>
+            <td>Your email address and the data above</td>
+          </tr>
+          <tr>
+            <td>Google Play / Apple App Store</td>
+            <td>Take payment and confirm purchases</td>
+            <td>Your payment details, which we never see</td>
+          </tr>
+          <tr>
+            <td>Expo</td>
+            <td>Delivers push notifications</td>
+            <td>Your notification token, if alerts are on</td>
+          </tr>
+          <tr>
+            <td>CNN, Alternative.me, FRED, Finnhub, CoinGecko</td>
+            <td>Publish the market figures shown</td>
+            <td><strong>Nothing about you.</strong> These are read by our service, never by your device</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      There is no advertising network and no analytics provider. Promotions shown inside the
+      app are for the app's own paid features and involve no third party.
+    </p>
+  </section>
+
+  <section>
+    <h2>Diagnostics</h2>
+    <p>
+      The app and our service record faults so they can be fixed. Those records are
+      automatically stripped of credentials &mdash; tokens, receipts, passwords and email
+      addresses are removed both by field name and by scanning the text of the message
+      itself, so that a credential cannot arrive by accident inside an error's own wording.
+    </p>
+  </section>
+
+  <section>
+    <h2>Keeping data</h2>
+    <p>
+      Your account and its purchases are kept while the account exists, because a one-time
+      unlock you paid for must still be there when you sign in on a new phone.
+    </p>
+    <p>Alert preferences and the notification token are kept while alerts are on.</p>
+    <p>
+      The market figures the app stores on your device &mdash; the reading behind a
+      home-screen widget &mdash; stay on the device and are overwritten as newer ones arrive.
+      They are never uploaded.
+    </p>
+  </section>
+
+  <section>
+    <h2>Your choices</h2>
+    <p>
+      <strong>Use the app without an account.</strong> Everything except the paid unlocks
+      works with no account and no personal data.
+    </p>
+    <p>
+      <strong>Turn alerts off</strong> at any time in Profile, which stops the notification
+      token being used.
+    </p>
+    <p>
+      <strong>Sign out</strong>, which ends the session on this device and on our service.
+    </p>
+    <p>
+      <strong>Delete your account and everything attached to it</strong>, from inside the
+      app: Profile &rarr; Delete my account. It asks you to confirm, tells you what will be
+      lost, and then removes the account, its purchases and its alert settings straight away.
+      You are signed out on every device. There is no waiting period and no way to undo it.
+    </p>
+    <p>
+      If you have already uninstalled the app, or cannot sign in, write to the address below
+      from the account's email address. The account is deleted within 30 days and you will be
+      told when it is done.
+    </p>
+    <div class="aside">
+      <p>
+        Deleting the account does not refund purchases and does not cancel anything with the
+        store. Refunds are handled by Google Play or the App Store, who took the payment.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>
+      The app is not directed at children and does not knowingly collect anything from anyone
+      under 13.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>
+      If this policy changes, the date at the top changes with it. Material changes will be
+      announced in the app before they take effect.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p class="contact"><a href="mailto:jen9bez@gmail.com">jen9bez@gmail.com</a></p>
+    <p>Questions about this policy, and requests to delete an account, go to that address.</p>
+  </section>
+
+  <footer>Peek &middot; Privacy Policy &middot; 14 September 2026</footer>
+</div>
+</body>
+</html>
