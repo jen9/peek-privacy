@@ -191,7 +191,7 @@
 <body>
 <div class="page">
   <header class="masthead">
-    <div class="eyebrow">Peek &middot; Last updated 14 September 2026</div>
+    <div class="eyebrow">Peek &middot; Last updated 17 September 2026</div>
     <h1>Privacy Policy</h1>
     <p class="standfirst">
       What the Peek app collects, why, and what it does not collect. Written from what the
@@ -247,6 +247,13 @@
       If you allow notifications, your device issues a push token which is sent to our
       service together with which alert types you have enabled. It is used only to deliver
       the alerts you asked for. Turning alerts off stops it being used.
+    </p>
+    <p>
+      On Android the token is issued by Google's Firebase Cloud Messaging, which is how
+      every Android app receives notifications; there is no other route. Google therefore
+      knows that this installation can receive notifications from this app. Nothing else
+      about you is sent to Firebase: no account, no email address, and none of the figures
+      the app shows.
     </p>
 
     <h3>Purchases</h3>
@@ -306,7 +313,15 @@
           </tr>
           <tr>
             <td>Expo</td>
-            <td>Delivers push notifications</td>
+            <td>Sends push notifications on our behalf</td>
+            <td>Your notification token, if alerts are on</td>
+          </tr>
+          <tr>
+            <td>Google (Firebase Cloud Messaging)</td>
+            <td>
+              Carries a push notification to your Android phone. This is how Android
+              delivers notifications; there is no alternative route
+            </td>
             <td>Your notification token, if alerts are on</td>
           </tr>
           <tr>
@@ -401,7 +416,7 @@
     <p>Questions about this policy, and requests to delete an account, go to that address.</p>
   </section>
 
-  <footer>Peek &middot; Privacy Policy &middot; 14 September 2026</footer>
+  <footer>Peek &middot; Privacy Policy &middot; 17 September 2026</footer>
 </div>
 </body>
 </html>
